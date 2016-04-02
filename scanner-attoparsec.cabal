@@ -25,17 +25,17 @@ source-repository head
 
 library
   exposed-modules:     Scanner.Attoparsec
-  -- other-modules:       
+  other-modules:       Data.Either
   -- other-extensions:    
   build-depends:       base <5
                      , attoparsec
                      , scanner
-  hs-source-dirs:      lib
+  hs-source-dirs:      lib, compat
   default-language:    Haskell2010
 
 test-suite spec
   type:                exitcode-stdio-1.0
-  hs-source-dirs:      spec
+  hs-source-dirs:      spec, compat
   main-is:             spec.hs
   build-depends:       base <5
                      , bytestring
