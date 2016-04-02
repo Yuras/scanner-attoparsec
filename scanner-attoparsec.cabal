@@ -26,7 +26,7 @@ source-repository head
 library
   exposed-modules:     Scanner.Attoparsec
   other-modules:       Data.Either
-  -- other-extensions:    
+  ghc-options:         -O2
   build-depends:       base <5
                      , attoparsec
                      , scanner
