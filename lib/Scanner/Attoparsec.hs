@@ -10,6 +10,7 @@ import Scanner.Internal (Scanner (Scanner))
 import qualified Data.Attoparsec.ByteString as Atto
 
 {-# INLINE atto #-}
+-- | Convert attoparsec parser into a scanner
 atto :: Atto.Parser a -> Scanner a
 atto p = Scanner $ \bs next ->
   case Atto.parse p bs of
