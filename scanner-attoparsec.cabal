@@ -28,6 +28,7 @@ library
   other-modules:       Data.Either
   ghc-options:         -O2
   build-depends:       base <5
+                     , bytestring
                      , attoparsec
                      , scanner <0.4
   hs-source-dirs:      lib, compat
