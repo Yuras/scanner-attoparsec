@@ -1,5 +1,5 @@
 name:                scanner-attoparsec
-version:             0.1
+version:             0.2
 synopsis:            Inject attoparsec parser with backtracking into non-backtracking scanner
 homepage:            https://github.com/Yuras/scanner-attoparsec
 license:             BSD3

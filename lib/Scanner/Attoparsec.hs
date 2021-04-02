@@ -28,6 +28,8 @@ atto p = Scanner $ \bs next ->
       Atto.Partial cont' -> slowPath cont' next
 
 -- | Convert scanner to attoparsec parser
+--
+-- @since 0.2
 toAtto :: Scanner a -> Atto.Parser a
 toAtto s = go (Scanner.scan s)
   where
