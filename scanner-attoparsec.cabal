@@ -1,5 +1,5 @@
 name:                scanner-attoparsec
-version:             0.1
+version:             0.2
 synopsis:            Inject attoparsec parser with backtracking into non-backtracking scanner
 homepage:            https://github.com/Yuras/scanner-attoparsec
 license:             BSD3
@@ -28,7 +28,8 @@ library
   other-modules:       Data.Either
   ghc-options:         -O2
   build-depends:       base <5
-                     , attoparsec
+                     , bytestring
+                     , attoparsec >= 0.14.1
                      , scanner <0.4
   hs-source-dirs:      lib, compat
   default-language:    Haskell2010
