@@ -29,7 +29,7 @@ library
   ghc-options:         -O2
   build-depends:       base <5
                      , attoparsec
-                     , scanner <= 0.2
+                     , scanner <0.4
   hs-source-dirs:      lib, compat
   default-language:    Haskell2010
 
@@ -37,6 +37,7 @@ test-suite spec
   type:                exitcode-stdio-1.0
   hs-source-dirs:      spec, compat
   main-is:             spec.hs
+  other-modules:       Data.Either
   build-depends:       base <5
                      , bytestring
                      , scanner
