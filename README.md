@@ -1,7 +1,7 @@
 # scanner-attoparsec
 Inject attoparsec parser with backtracking into non-backtracking scanner
 
-[![Build Status](https://travis-ci.org/Yuras/scanner-attoparsec.svg?branch=master)](https://travis-ci.org/Yuras/scanner-attoparsec)
+[![Haskell CI](https://github.com/Yuras/scanner-attoparsec/actions/workflows/build.yml/badge.svg)](https://github.com/Yuras/scanner-attoparsec/actions/workflows/build.yml)
 
 Backtracking kills performance, so scanner package doesn't support it.
 But sometimes you just need it. E.g. you have a mostly non-backtracking
