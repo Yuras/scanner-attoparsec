@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - master
-      - wip/yuras/actions
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   build:
