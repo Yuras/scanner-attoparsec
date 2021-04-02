@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         ghc:
-          - "9.0"
+          - "latest"
           - "8.10"
           - "8.8"
           - "8.6"
